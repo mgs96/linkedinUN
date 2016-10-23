@@ -1,0 +1,28 @@
+<%= form_for :session, url: login_path, :html => {class: "form-horizontal"} do |f| %> 
+  <fieldset>
+
+    <legend>Iniciar sesión</legend>
+
+    <div class="form-group">
+      <%= f.label :usuario, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :username, placeholder: "Usuario", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :contraseña, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.password_field :password, placeholder: "Contraseña", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group"> 
+      <%= f.label "", class: "col-md-4 control-label" %> 
+      <div class="col-md-4">
+        <%= f.submit "Ok", class: "btn btn-primary" %> 
+      </div>
+    </div>
+
+  </fieldset>
+<% end %>

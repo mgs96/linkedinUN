@@ -1,0 +1,13 @@
+nohup: no se tendrá en cuenta la entrada
+2016-10-23 18:14:58.262+0000 INFO  Starting...
+2016-10-23 18:15:16.894+0000 INFO  Bolt enabled on localhost:7472.
+2016-10-23 18:15:52.049+0000 INFO  Started.
+2016-10-23 18:16:02.120+0000 INFO  Remote interface available at http://localhost:7474/
+2016-10-23 18:33:23.350+0000 INFO  Neo4j Server shutdown initiated by request
+2016-10-23 18:33:24.135+0000 INFO  Stopping...
+2016-10-23 18:33:25.102+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2016-10-23 18:38:48.626+0000 INFO  Starting...
+2016-10-23 18:38:57.171+0000 INFO  Bolt enabled on localhost:7472.
+2016-10-23 18:39:35.070+0000 INFO  Started.
+2016-10-23 18:39:55.999+0000 INFO  Remote interface available at http://localhost:7474/

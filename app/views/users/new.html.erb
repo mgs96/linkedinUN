@@ -1,0 +1,63 @@
+<%= form_for @user, :html => {class: "form-horizontal"} do |f| %> 
+  <fieldset>
+
+    <legend>Iniciar sesión</legend>
+
+    <div class="form-group">
+      <%= f.label :nombres, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :first_name, placeholder: "Nombres", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :apellidos, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :last_name, placeholder: "Apellidos", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.email_field :email, placeholder: "Email", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :contraseña, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.password_field :password, placeholder: "Contraseña", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :carrera, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :career, placeholder: "Carrera", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :semestre, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :semester, placeholder: "Semestre", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :usuario, class: "col-md-4 control-label" %>  
+      <div class="col-md-4">
+        <%= f.text_field :username, placeholder: "Usuario", class: "form-control input-md", required: "" %> 
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label "", class: "col-md-4 control-label" %>
+      <div class="col-md-4">
+        <%= f.submit "Ok", class: "btn btn-primary" %> 
+      </div>
+    </div>
+
+  </fieldset>
+<% end %>
