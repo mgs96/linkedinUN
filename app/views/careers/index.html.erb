@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Careers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @careers.each do |career| %>
+      <tr>
+        <td><%= career.name %></td>
+        <td><%= career.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Career', new_career_path %>
